@@ -1,1 +1,67 @@
-<!doctype html><meta charset=utf-8><title>okx-live-tracker</title><h1>OKX LIVE Mirror tracker — initializing…</h1>
+<!doctype html><html lang=en><head>
+<meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=refresh content=30>
+<title>OKX LIVE Mirror tracker</title>
+<style>
+:root{--bg:#0c0d10;--card:#15171c;--line:#2a2e36;--txt:#e8eaed;--mut:#8b909a;--up:#3dd68c;--dn:#ff5d73;}
+*{box-sizing:border-box}
+body{margin:0;font:14px/1.45 ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--txt)}
+header{padding:20px 24px 10px;border-bottom:1px solid var(--line)}
+h1{margin:0;font-size:21px} h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);margin:0 0 8px}
+.sub{color:var(--mut);font-size:13px;margin-top:6px} a{color:#9bdcff}
+.badge{display:inline-block;background:#3a1016;color:#ff8a9b;font-size:11px;padding:2px 9px;border-radius:999px;margin-left:6px}
+.wrap{padding:16px 24px 40px;display:grid;gap:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+.card .k{color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.07em}
+.card .v{font-size:21px;margin-top:4px;font-variant-numeric:tabular-nums}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px}
+th,td{text-align:left;padding:8px 11px;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{font-size:10px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--line)}
+tr+tr td{border-top:1px solid var(--line)}
+.up{color:var(--up)}.dn{color:var(--dn)}.mut{color:var(--mut)}.sym{font-weight:650}.mono{font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+</style></head><body>
+<header>
+<h1>OKX LIVE Mirror tracker <span class="badge">REAL MONEY</span></h1>
+<div class="sub">Updated 2026-10-11 04:33:11 UTC · reconciled to <b>real OKX fills</b> (not our logs) · armed 2026-10-10 09:13 UTC · <a href="https://pixel-vector-bell.github.io/okx-paper-lab/">paper lab</a> · last scanned <span id=since>—</span></div>
+</header>
+<div class="wrap">
+  <div class="grid">
+    <div class='card'><div class='k'>Account equity</div><div class='v'>$52.92</div></div>
+    <div class='card'><div class='k'>USDT free</div><div class='v'>$22.38</div></div>
+    <div class='card'><div class='k'>Open value</div><div class='v'>$30.54</div></div>
+    <div class='card'><div class='k'>Open uPnL</div><div class='v'><span class='dn'>$-0.44</span></div></div>
+    <div class='card'><div class='k'>Closed trades</div><div class='v'>1/6 wins</div></div>
+    <div class='card'><div class='k'>Win rate</div><div class='v'>17%</div></div>
+    <div class='card'><div class='k'>Realized P&amp;L</div><div class='v'><span class='dn'>$-2.62</span></div></div>
+    <div class='card'><div class='k'>Profit factor</div><div class='v'>0.12</div></div>
+    <div class='card'><div class='k'>Avg trade</div><div class='v'><span class='dn'>-2.02%</span></div></div>
+  </div>
+
+  <div>
+    <h2>Open live position (marked to real balance + live price)</h2>
+    <div class="scroll"><table>
+    <tr><th>pair</th><th>entry</th><th>last</th><th>trailing stop</th><th>uPnL</th><th>value</th></tr>
+    <tr><td class='sym'>MINA-USDT</td><td class='mono'>0.0871</td><td class='mono'>0.08585</td><td class='mono'>0.08361</td><td><span class='dn'>-1.44%</span></td><td class='mono'>$30.54</td></tr>
+    </table></div>
+  </div>
+
+  <div>
+    <h2>Closed real round trips — live % vs paper % (same coin)</h2>
+    <div class="scroll"><table>
+    <tr><th>exit (UTC)</th><th>pair</th><th>source</th><th>buy</th><th>sell</th><th>live net %</th><th>live net $</th><th>paper %</th></tr>
+    <tr><td class='mono'>2026-10-11 04:05 UTC</td><td class='sym'>STRK-USDT</td><td><span class='up'>mirror</span></td><td class='mono'>0.107358</td><td class='mono'>0.1099</td><td><span class='up'>+1.65%</span></td><td><span class='up'>$+0.36</span></td><td><span class='up'>+3.69%</span></td></tr><tr><td class='mono'>2026-10-11 03:39 UTC</td><td class='sym'>CFX-USDT</td><td><span class='up'>mirror</span></td><td class='mono'>0.06097</td><td class='mono'>0.05932</td><td><span class='dn'>-3.39%</span></td><td><span class='dn'>$-0.77</span></td><td><span class='dn'>-3.16%</span></td></tr><tr><td class='mono'>2026-10-10 13:10 UTC</td><td class='sym'>BAT-USDT</td><td><span class='up'>mirror</span></td><td class='mono'>0.13435</td><td class='mono'>0.13004</td><td><span class='dn'>-3.88%</span></td><td><span class='dn'>$-0.92</span></td><td><span class='dn'>-4.29%</span></td></tr><tr><td class='mono'>2026-10-10 12:50 UTC</td><td class='sym'>BAT-USDT</td><td><span class='up'>mirror</span></td><td class='mono'>0.14137</td><td class='mono'>0.13514</td><td><span class='dn'>-5.08%</span></td><td><span class='dn'>$-1.27</span></td><td><span class='dn'>-4.29%</span></td></tr><tr><td class='mono'>2026-10-10 09:30 UTC</td><td class='sym'>BTC-USDT</td><td><span class='mut'>manual</span></td><td class='mono'>82911.6</td><td class='mono'>82917.5</td><td><span class='dn'>-0.71%</span></td><td><span class='dn'>$-0.01</span></td><td><span class='mut'>—</span></td></tr><tr><td class='mono'>2026-10-10 09:30 UTC</td><td class='sym'>TRX-USDT</td><td><span class='mut'>manual</span></td><td class='mono'>0.33098</td><td class='mono'>0.33094</td><td><span class='dn'>-0.71%</span></td><td><span class='dn'>$-0.01</span></td><td><span class='mut'>—</span></td></tr>
+    </table></div>
+    <p class="mut" style="font-size:12px">Live % is netted from the real OKX fills (base-ccy fee on the buy, quote-ccy fee on the sell). Account ~$25–60 vs paper's $1,000/slot, so compare on <b>%</b>, not dollars. TP/SL are symmetric 4%/4% — no hidden bias. Small samples are noise; the edge only shows over dozens of trades.</p>
+    
+  </div>
+</div>
+<script>
+var LAST=1791693191719;
+function ago(ms){if(!ms)return 'n/a';var s=Math.max(0,Math.floor((Date.now()-ms)/1000));
+if(s<60)return s+'s ago';if(s<3600)return Math.floor(s/60)+'m '+(s%60)+'s ago';return Math.floor(s/3600)+'h '+Math.floor((s%3600)/60)+'m ago';}
+function tk(){var e=document.getElementById('since');if(e)e.textContent=ago(LAST);}
+tk();setInterval(tk,1000);
+</script>
+</body></html>
